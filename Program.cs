@@ -5,17 +5,6 @@ namespace CatWorx.BadgeMaker
 {
     class Program
     {
-        // Main must be nested inside a class Only one entry point
-        static void Main(string[] args) // Entry Point to application
-        {
-            // This is our employee getting code now
-            List<string> employees = GetEmployees();
-
-            for (int i = 0; i < employees.Count; i++)
-            {
-                Console.WriteLine(employees[i]);
-            }
-        }
         static List<string> GetEmployees()
         {
             List<string> employees = new List<string>();
@@ -34,6 +23,19 @@ namespace CatWorx.BadgeMaker
             // This is important!
             return employees;
             // This will be handed off to the caller method so it must be returned at the end of the method
+        }
+        static void PrintEmployees(List<string> employees)
+        {
+            for (int i = 0; i < employees.Count; i++)
+            {
+                Console.WriteLine(employees[i]);
+            }
+        }
+        static void Main(string[] args) // Entry Point to application
+        {
+            // This is our employee getting code now
+            List<string> employees = GetEmployees();
+            PrintEmployees(employees);
         }
     }
 }

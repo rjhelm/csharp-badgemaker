@@ -122,4 +122,4 @@ using System.Collections.Generic;
 - `[access_modifier] ["static"] return_type name([parameters])`
 - The parts in brackets are optional.
 - Remember that if a static method wants to call another method inside the same class directly, that method must also be static. Because Main() is static, any other method it needs to call within Program must also be static.
-- 
+- Any method that does not return a value must be defined to return void.
