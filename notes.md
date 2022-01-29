@@ -112,4 +112,10 @@ using System.Collections.Generic;
     for(Console.WriteLine($"Initializer: i={i}, j={j}"); i++ < j--; Console.WriteLine($"Iterator: i={i}, j={j}"))
     {
     }
-
+- Nested for loop in C# is allowed
+- for (int i = 0; i < 2; i++)
+{
+    for(int j =i; j < 4; j++)
+        Console.WriteLine("Value of i: {0}, J: {1} ", i,j);
+}
+- 
