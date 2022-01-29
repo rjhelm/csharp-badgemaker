@@ -118,4 +118,8 @@ using System.Collections.Generic;
     for(int j =i; j < 4; j++)
         Console.WriteLine("Value of i: {0}, J: {1} ", i,j);
 }
+- In C#, a method declaration (or signature) looks like the following example:
+- `[access_modifier] ["static"] return_type name([parameters])`
+- The parts in brackets are optional.
+- Remember that if a static method wants to call another method inside the same class directly, that method must also be static. Because Main() is static, any other method it needs to call within Program must also be static.
 - 
