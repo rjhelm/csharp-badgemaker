@@ -123,3 +123,8 @@ using System.Collections.Generic;
 - The parts in brackets are optional.
 - Remember that if a static method wants to call another method inside the same class directly, that method must also be static. Because Main() is static, any other method it needs to call within Program must also be static.
 - Any method that does not return a value must be defined to return void.
+
+## C# Notes
+
+- By default, properties and methods defined in a class are given the protection level of private, which means that they can only be accessed within the class itself
+- To make a property or method accessible to other classes, you must make it public.
