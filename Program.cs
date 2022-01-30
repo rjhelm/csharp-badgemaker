@@ -11,14 +11,24 @@ namespace CatWorx.BadgeMaker
             // Collect user values until the value is an empty string
             while (true)
             {
+                // Move the initial prompt inside the loop, so it repeats for each employee
                 Console.WriteLine("Please enter a name: (leave empty to exit) ");
-                string input = Console.ReadLine();
+                // Change the input to firestName
+                string firstName = Console.ReadLine();
+                
                 // Break if the user hits ENTER without typing a name
-                if (input == "")
+                if (firstName == "")
                 {
                     break;
                 }
-                Employee currentEmployee = new Employee(input, "Smith");
+                // Add a Console.ReadLine for each value
+                Console.Write("Please enter a last name: ");
+                string lastName = Console.ReadLine();
+                Console.Write("Please enter an employee ID: ");
+                int id = Int32.Parse(Console.ReadLine());
+                Console.Write("Please enter a photo URL: ");
+                string photoUrl = Console.ReadLine();
+                Employee currentEmployee = new Employee(firstName, lastName, id, photoUrl);
                 employees.Add(currentEmployee);
             }
             // This is important!
@@ -29,7 +39,7 @@ namespace CatWorx.BadgeMaker
         {
             for (int i = 0; i < employees.Count; i++)
             {
-                Console.WriteLine(employees[i]);
+                Console.WriteLine(employees[i].GetName());
             }
         }
         static void Main(string[] args) // Entry Point to application
