@@ -35,19 +35,11 @@ namespace CatWorx.BadgeMaker
             return employees;
             // This will be handed off to the caller method so it must be returned at the end of the method
         }
-        static void PrintEmployees(List<Employee> employees)
-        {
-            for (int i = 0; i < employees.Count; i++)
-            {
-                string template = "{0, -10}\t{1, -20}\t{2}";
-                Console.WriteLine(String.Format(template, employees[i].GetId(), employees[i].GetName(), employees[i].GetPhotoUrl()));
-            }
-        }
         static void Main(string[] args) // Entry Point to application
         {
             // This is our employee getting code now
             List<Employee> employees = GetEmployees();
-            PrintEmployees(employees);
+            
         }
     }
 }

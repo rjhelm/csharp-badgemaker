@@ -128,3 +128,14 @@ using System.Collections.Generic;
 
 - By default, properties and methods defined in a class are given the protection level of private, which means that they can only be accessed within the class itself
 - To make a property or method accessible to other classes, you must make it public.
+
+## Psuedocode
+
+- The goal at this point is to save all of the employee data to a CSV file located in data/employees.csv.
+
+  - Add a method that creates a csv file
+  - Call this method in program, passing it the list of employees
+  - Check that data folder exists
+  - Create a new file at data/employees.csv
+  - Loop over the given employees
+  - Write the employee data to the file as a comma-separated string to CSV
