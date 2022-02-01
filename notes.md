@@ -144,3 +144,11 @@ using System.Collections.Generic;
   - Import the badge template image file that will be background image
   - Customize each employees badge by adding information specific to each employee (name, ID, picture)
   - Add this new image file to the data folder
+
+- Finishing touches
+  - Add a method that reads the employees.csv file and creates a list of employees
+  - Add a class for fetching the employees
+  - Place the already created GetEmployees() method this class
+  - For test data creae a method that will fetch data from API
+  - Convert JSON to C# objects
+  - Create a new Employee for each person that is fetched
