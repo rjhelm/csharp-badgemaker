@@ -139,3 +139,8 @@ using System.Collections.Generic;
   - Create a new file at data/employees.csv
   - Loop over the given employees
   - Write the employee data to the file as a comma-separated string to CSV
+
+- To make the badge for the employee
+  - Import the badge template image file that will be background image
+  - Customize each employees badge by adding information specific to each employee (name, ID, picture)
+  - Add this new image file to the data folder
